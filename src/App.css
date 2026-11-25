@@ -1,0 +1,46 @@
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.game-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.player-card {
+  flex: 1;
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.active-x {
+  border-color: #22d3ee;
+  background: rgba(34, 211, 238, 0.12);
+}
+
+.active-o {
+  border-color: #f472b6;
+  background: rgba(244, 114, 182, 0.12);
+}
+
+.game-cell {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.game-cell:hover:enabled {
+  transform: scale(1.04);
+  border-color: #a78bfa;
+}
+
+.game-cell:disabled {
+  cursor: default;
+}
